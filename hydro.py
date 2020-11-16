@@ -21,7 +21,7 @@ xi[Ngrid] = x[Ngrid-1] + 0.5 * dx
 xi[Ngrid-1] = x[Ngrid-2] + 0.5 * dx
 
 # initial density distribution is Gaussian, with amplitude ''amp''
-amp = 1.e1
+amp = 1.e-5
 f1 = amp*np.exp(-(x-25)**2./3**2.)+1
 # initial velocity distribution
 u1 = np.ones(len(x)) * 1 / Ngrid
